@@ -14,7 +14,13 @@ var func = function() {
     'use strict';
 
     $(".date").text(function() {
-        return $(this).attr("datetime");
+        return (new Date($(this).attr("datetime")).toLocaleDateString('en-GB', {
+            day : 'numeric',
+            month : 'short',
+            year : 'numeric',
+            hour : 'numeric',    
+            minute : 'numeric'
+        }));
     });
 };
 
