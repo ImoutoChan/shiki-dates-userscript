@@ -14,13 +14,18 @@ var func = function() {
     'use strict';
 
     $(".date").text(function() {
-        return (new Date($(this).attr("datetime")).toLocaleDateString('en-GB', {
+        var newDate = (new Date($(this).attr("datetime")).toLocaleDateString('en-GB', {
             day : 'numeric',
             month : 'short',
             year : 'numeric',
-            hour : 'numeric',    
+            hour : 'numeric',
             minute : 'numeric'
         }));
+
+        if (newDate != "Invalid Date")
+        {
+            return newDate;
+        }
     });
 };
 
