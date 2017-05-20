@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Shiki History Dates
 // @namespace    http://shikimori.org/
-// @version      1.1.0
+// @version      1.2.0
 // @description  Dates in history on shikimori.org
 // @author       ImoutoChan
 // @match        https://shikimori.org/*
