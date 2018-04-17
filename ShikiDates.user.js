@@ -6,6 +6,7 @@
 // @author       ImoutoChan
 // @match        https://shikimori.org/*
 // @match        http://shikimori.org/*
+// @license      MIT
 // @grant        none
 // ==/UserScript==
 
